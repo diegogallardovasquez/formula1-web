@@ -15,12 +15,3 @@ if (disqusShortname && location.protocol.startsWith("http")) {
   embed.setAttribute("data-timestamp", String(Date.now()));
   document.body.appendChild(embed);
 }
-
-if (location.protocol.startsWith("http")) {
-  const pageUrl = encodeURIComponent(new URL("./", location.href).href);
-  document.getElementById("share-x").href =
-    "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + encodeURIComponent("Mi pasión por la F1");
-  document.getElementById("share-facebook").href =
-    "https://www.facebook.com/sharer/sharer.php?u=" + pageUrl;
-  document.querySelector(".right").hidden = false;
-}
