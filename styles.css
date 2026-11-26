@@ -25,3 +25,8 @@ figure { margin: 1.5rem 0; }
 img { max-width: 100%; height: auto; }
 figcaption { font-size: .85rem; margin-top: .5rem; }
 footer { height: auto; padding: 1rem 4%; border-top: 1px solid #dad4ce; }
+@media (max-width: 760px) {
+  body.works_on_smartphone main { display: block; }
+  header nav { clear: both; }
+  article, aside { overflow: visible; }
+}
