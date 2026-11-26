@@ -30,3 +30,7 @@ footer { height: auto; padding: 1rem 4%; border-top: 1px solid #dad4ce; }
   header nav { clear: both; }
   article, aside { overflow: visible; }
 }
+#photo-toggle { display: block; width: 100%; border: 0; padding: 0; background: transparent; text-align: left; cursor: zoom-in; }
+#photo-toggle[aria-expanded="true"] { cursor: zoom-out; }
+#smart_thumbnail { display: block; width: 100%; }
+#smart_thumbnail.small { width: 55%; max-width: 320px; }
