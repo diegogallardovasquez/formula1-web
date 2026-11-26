@@ -34,3 +34,10 @@ footer { height: auto; padding: 1rem 4%; border-top: 1px solid #dad4ce; }
 #photo-toggle[aria-expanded="true"] { cursor: zoom-out; }
 #smart_thumbnail { display: block; width: 100%; }
 #smart_thumbnail.small { width: 55%; max-width: 320px; }
+nav a.passion-link {
+  display: inline-block;
+  padding: .4rem .8rem;
+  border-radius: .3rem;
+  background: #9f1723;
+  color: white;
+}
