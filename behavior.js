@@ -7,3 +7,11 @@ if (photoButton) {
     photoButton.setAttribute("aria-label", small ? "Ampliar foto" : "Reducir foto");
   });
 }
+
+const disqusShortname = ""; // Nombre registrado en Disqus para este sitio.
+if (disqusShortname && location.protocol.startsWith("http")) {
+  const embed = document.createElement("script");
+  embed.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+  embed.setAttribute("data-timestamp", String(Date.now()));
+  document.body.appendChild(embed);
+}
