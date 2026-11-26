@@ -8,8 +8,14 @@ if (photoButton) {
   });
 }
 
-const disqusShortname = ""; // Nombre registrado en Disqus para este sitio.
+const disqusShortname = "mi-pasion-por-la-formula-1"; // Nombre registrado en Disqus para este sitio.
 if (disqusShortname && location.protocol.startsWith("http")) {
+  const page = location.pathname.split("/").pop() || "index.html";
+  window.disqus_config = function () {
+    this.page.identifier = page;
+    this.page.url = "https://diegogallardovasquez.github.io/formula1-web/" + page;
+    this.language = "es";
+  };
   const embed = document.createElement("script");
   embed.src = "https://" + disqusShortname + ".disqus.com/embed.js";
   embed.setAttribute("data-timestamp", String(Date.now()));
